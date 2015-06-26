@@ -1,0 +1,4 @@
+[repositories]
+  local
+  as24-ivy-proxy-releases: http://54.171.54.95:8080/nexus/content/groups/ivy-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
+  as24-maven-proxy-releases: http://54.171.54.95:8080/nexus/content/groups/public/
