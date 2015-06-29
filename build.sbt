@@ -13,17 +13,16 @@ javaOptions in GlobalScope ++= Seq(
 
 libraryDependencies ++= {
   val akkaStreamV = "1.0-RC4"
+  val akkaV = "2.3.11"
+
   Seq(
-    "com.typesafe.akka" %% "akka-actor"                           % "2.3.11",
+    "com.typesafe.akka" %% "akka-actor"                           % akkaV,
     "com.typesafe.akka" %% "akka-stream-experimental"             % akkaStreamV,
     "com.typesafe.akka" %% "akka-http-experimental"               % akkaStreamV,
     "com.typesafe.akka" %% "akka-http-core-experimental"          % akkaStreamV,
-    "com.typesafe.akka" %% "akka-http-experimental"               % akkaStreamV,
-    "com.typesafe.akka" %% "akka-http-spray-json-experimental"    % akkaStreamV,
     "com.typesafe.akka" %% "akka-http-testkit-experimental"       % akkaStreamV,
     "org.scalatest"     %% "scalatest"                            % "2.2.5" % "test",
-    "org.reactivemongo" %% "reactivemongo"                        % "0.10.5.0.akka23",
-    "com.typesafe.akka" %% "akka-testkit"                         % "2.3.11" % "test"
+    "com.typesafe.akka" %% "akka-testkit"                         % akkaV % "test"
   )
 }
 
