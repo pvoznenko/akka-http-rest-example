@@ -6,11 +6,6 @@ scalaVersion := "2.11.6"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
-javaOptions in GlobalScope ++= Seq(
-  "-Dsbt.override.build.repos=true",
-  "-Dsbt.repository.config=./proxy-sbt-repositories"
-)
-
 libraryDependencies ++= {
   val akkaStreamV = "1.0-RC4"
   val akkaV = "2.3.11"
