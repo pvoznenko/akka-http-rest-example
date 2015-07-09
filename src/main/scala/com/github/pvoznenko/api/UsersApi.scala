@@ -1,4 +1,4 @@
-package com.github.pvoznenko.apis
+package com.github.pvoznenko.api
 
 import akka.http.scaladsl.server.Directives._
 import com.github.pvoznenko.utils.BearerTokenGenerator
